@@ -1,0 +1,11 @@
+#recipe-box {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff6bc;
+  color: #0d2b1f;
+}
+
+#recipe-header {
+  text-align: center;
+}

@@ -33,34 +33,43 @@ export default function Main() {
 
   return (
     <div>
-      <div>
-        <select onChange={handleTypeChange}>
-          <option value="all">Category</option>
-          {types.map((type) => (
-            <option key={type} value={type}>{type}</option>
-          ))}
-        </select>
-        <select onChange={handleSeasonChange}>
-          <option value="all">Season...</option>
-          {seasons.map((season) => (
-            <option key={season} value={season}>{season}</option>
-          ))}
-        </select>
-        <select onChange={handleMadeChange}>
-          <option value="all">Have made yet...</option>
-          {haveMades.map((haveMade) => (
-            <option key={haveMade} value={haveMade}>{haveMade}</option>
-          ))}
-        </select>
-        <select onChange={handleExpectChange}>
-          <option value="all">Expectations...</option>
-          {expects.map((expect) => (
-            <option key={expect} value={expect}>{expect}</option>
-          ))}
-        </select>
+      <div id='info-section'>
+        <div id='search-form'>
+          <h3>Filter By</h3>
+          <select onChange={handleTypeChange}>
+            <option value="all">Category...</option>
+            {types.map((type) => (
+              <option key={type} value={type}>{type}</option>
+            ))}
+          </select>
+          <select onChange={handleSeasonChange}>
+            <option value="all">Season...</option>
+            {seasons.map((season) => (
+              <option key={season} value={season}>{season}</option>
+            ))}
+          </select>
+          <select onChange={handleMadeChange}>
+            <option value="all">Have made yet...</option>
+            {haveMades.map((haveMade) => (
+              <option key={haveMade} value={haveMade}>{haveMade}</option>
+            ))}
+          </select>
+          <select onChange={handleExpectChange}>
+            <option value="all">Expectations...</option>
+            {expects.map((expect) => (
+              <option key={expect} value={expect}>{expect}</option>
+            ))}
+          </select>
+        </div>
+        {/* TODO: create a reset button */}
+        <ul id="expect-key">
+          <h3 id="expect-title">Expectations Key...</h3>
+          <li>1: Not expecting to like it.</li>
+          <li>2: I will like it.</li>
+          <li>3: SO EXCITED.</li>
+        </ul>
       </div>
-      {/* TODO: create a reset button */}
-      <div>
+      <div id='recipe-list-container'>
         {filtered.map((recipe) => (
           <RecipeCard key={recipe.name} {...recipe} />
         ))}

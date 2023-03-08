@@ -4,10 +4,6 @@
   padding: 15px;
   height: 110px;
   background-image: url('/public/granite-banner.png');
-  
-  font-size: 2em;
-  font-weight: 800;
-  flex-grow: 2;
 
   display: flex;
   align-items: center;
@@ -24,4 +20,8 @@
     color: #216e4e;
     background-color: rgba(255, 252, 235, 0.7);
     border-radius: 10px;
+
+    font-size: 2em;
+    font-weight: 800;
+    flex-grow: 2;
 }
