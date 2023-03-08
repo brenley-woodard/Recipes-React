@@ -32,10 +32,10 @@ export default function Main() {
   };
 
   return (
-    <div>
+    <div id='main'>
       <div id='info-section'>
         <div id='search-form'>
-          <h3>Filter By</h3>
+          <h3>Filter By...</h3>
           <select onChange={handleTypeChange}>
             <option value="all">Category...</option>
             {types.map((type) => (
@@ -61,7 +61,7 @@ export default function Main() {
             ))}
           </select>
         </div>
-        {/* TODO: create a reset button */}
+        {/* TODO: create a reset button. Thinking it will be something like on click set recipe.everything to all */}
         <ul id="expect-key">
           <h3 id="expect-title">Expectations Key...</h3>
           <li>1: Not expecting to like it.</li>

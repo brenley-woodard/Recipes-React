@@ -1,12 +1,19 @@
 ## Today's Todos...
 - CSS to match V1 
-- (stretch: make boxes clickable and redirect to details page)
+- Make boxes clickable and redirect to details page
+- create a reset button for form
+
+## Another Day...
+- create a nav link that goes back to home page 
+- Make 'Made yet' variable changeable
+- get notes functionality working
+- create an input for image of my finished project :) 
 
 ![](./public/PageMockup.png)
 
 ## notes to visit when convenient
-- need to center title in header
-- make recipe boxes (copy css from og app)
+- need to center title in header ✅
+- make recipe boxes (copy css from og app)✅
 - add a cute footer
 - consider creating components for diff things
 

@@ -1,6 +1,11 @@
+#main {
+  background-color: #fffceb;
+}
+
 #info-section {
   display: flex;
   justify-content: space-evenly;
+  padding-top: none;
 }
 
 #search-form {
@@ -34,6 +39,7 @@ select {
   width: 220px;
   border-radius: 10px;
   font-size: large;
+  text-align: left;
 }
 
 #recipe-list-container {
@@ -41,5 +47,5 @@ select {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding-top: 20px;
+  padding-top: 0px;
 }
