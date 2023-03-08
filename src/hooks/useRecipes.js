@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { getRecipes } from "../services/recipes.js";
+import { useEffect, useState } from 'react';
+import { getRecipes } from '../services/recipes.js';
 
 export default function useRecipes() {
   const [recipes, setRecipes] = useState([]);
@@ -16,5 +16,5 @@ export default function useRecipes() {
     };
     fetchData();
   }, []);
-  return {recipes, error} ;
+  return { recipes, error } ;
 }
