@@ -1,0 +1,27 @@
+
+#header {
+  top: 0;
+  padding: 15px;
+  height: 110px;
+  background-image: url('/public/granite-banner.png');
+  
+  font-size: 2em;
+  font-weight: 800;
+  flex-grow: 2;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#title {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: #216e4e;
+    background-color: rgba(255, 252, 235, 0.7);
+    border-radius: 10px;
+}
